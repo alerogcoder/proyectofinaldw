@@ -100,7 +100,7 @@ article.islandia {
     height: 75%;
     bottom: -18.75rem;
     transition: all 1s ease;
-    overflow: scroll;
+    overflow-y: auto;
 }
 .gridtable article:hover .descripcion {
     bottom: 0rem;
