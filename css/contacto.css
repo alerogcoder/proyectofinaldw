@@ -1,0 +1,113 @@
+@media (max-width: 1440px) {
+    .gridcontacto {
+        flex-direction: column!important;
+    }
+    .formulario form {
+        display: flex!important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%!important;
+    }
+    .formulario span {
+        display: flex!important;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .gridcontacto section {
+        width: 100%!important;
+    }
+}
+section#contacto {
+    padding: 12.5rem 5%;
+    min-height: 90vh;
+}
+section.texto {
+    width: 50%;
+    background: var(--bgopacidad);
+    color: var(--claro);
+    font-family: 'Poppins';
+    font-size: .875rem;
+    padding: 1.25rem;
+    text-align: justify;
+}
+.gridcontacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+}
+.formulario form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 15px;
+    grid-template-areas:
+        "nombre mail"
+        "texto texto"
+        "boton boton";
+}
+section.formulario {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background: var(--bgopacidad);
+    padding: 1.25rem;
+}
+#name { grid-area: nombre; }
+#mail { grid-area: mail; }
+#mensaje { grid-area: texto; }
+#boton { grid-area: boton; }
+.texto img {
+    width: 10%;
+}
+.texto span {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.5625rem;
+}
+.texto article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.125rem;
+}
+.texto article:first-of-type {
+    margin-bottom: 1.875rem;
+}
+#name label, #mail label {
+    color: var(--claro);
+    font-family: share tech mono;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+#mensaje label {
+    display: none;
+}
+input {
+    background: var(--acento);
+    border: none;
+    font-family: 'Poppins';
+    font-size: 12px;
+    padding: 0px 5px;
+}
+textarea {
+    width: 37.5rem!important;
+    background-color: var(--acento);
+    border: none;
+    font-family: poppins;
+    font-size: 12px;
+}
+#boton button {
+    width: 100%;
+    font-family: 'Share Tech Mono';
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 2px;
+    background: var(--claro);
+    border: none;
+}
