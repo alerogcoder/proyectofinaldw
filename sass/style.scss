@@ -1,0 +1,27 @@
+// primero utilities
+@import "./utilities/variables";
+@import "./utilities/mapas";
+
+// despues partials de la base
+@import "./base/reset";
+
+// layout
+@import "./layouts/header";
+@import "./layouts/main-index";
+@import "./layouts/footer";
+
+// componentes
+@import "./components/video";
+@import "./components/destinos";
+@import "./components/precios";
+@import "./components/contacto";
+@import "./components/nosotros";
+
+// mediaQ
+@import "./layouts/mediaQ/media1440";
+@import "./layouts/mediaQ/media1024";
+@import "./layouts/mediaQ/media992";
+@import "./layouts/mediaQ/media768";
+@import "./layouts/mediaQ/media425";
+@import "./layouts/mediaQ/media375";
+@import "./layouts/mediaQ/media320";
